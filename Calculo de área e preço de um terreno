@@ -1,0 +1,29 @@
+using System;
+
+namespace ConsoleApp6
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double largura, altura, preçom2, area, preço;
+
+            Console.WriteLine("Informe a Largura do Terreno");
+            largura = double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe a Altura do Terreno");
+            altura = double.Parse(Console.ReadLine());
+            Console.WriteLine("Informe o preço do metro quadrado");
+            preçom2 = double.Parse(Console.ReadLine());
+
+            area = largura * altura;
+            preço = area * preçom2;
+
+            Console.WriteLine("area = " + area.ToString("f2"));
+            Console.WriteLine("preço = " + preço.ToString("f2"));
+
+            Console.ReadLine();
+
+
+        }
+    }
+}

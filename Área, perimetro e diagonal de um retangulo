@@ -1,0 +1,31 @@
+using System;
+
+namespace ConsoleApp9
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double b, h;
+            double area, perimetro, diagonal;
+
+
+            Console.WriteLine("Digite a largura: ");
+            b = double.Parse(Console.ReadLine());
+            Console.WriteLine("Digite a altura: ");
+            h = double.Parse(Console.ReadLine());
+
+            area = b * h;
+            perimetro = (b + h) * 2;
+            diagonal = Math.Sqrt(Math.Pow(b, 2) + Math.Pow(h, 2));
+
+            Console.WriteLine("Area = : " + area.ToString("f4"));
+            Console.WriteLine("Perimetro = : " + perimetro.ToString("f4"));
+            Console.WriteLine("Diagonal = : " + diagonal.ToString("f4"));
+
+            Console.ReadLine();
+
+          
+        }
+    }
+}
